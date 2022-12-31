@@ -10,3 +10,6 @@ genpb:
 clean:
 	rm -rf bin
 	rm -rf cmd/pb
+
+runex:
+	go run cmd/exercise/*.go
