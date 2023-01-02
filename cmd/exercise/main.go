@@ -33,4 +33,35 @@ func main() {
 
 	fmt.Println("defer-multi.go:")
 	stackDefer()
+
+	fmt.Println("struct-pointers.go:")
+	structPointers()
+
+	fmt.Println("slices-pointers.go:")
+	slicesPointers()
+
+	fmt.Println("slice-len-cap.go:")
+	s := []int{2, 3, 5, 7, 11, 13}
+	printSlice(s)
+	s = s[:0]
+	printSlice(s)
+	s = s[:4]
+	printSlice(s)
+	s = s[2:]
+	printSlice(s)
+
+	fmt.Println("slices-of-slice.go:")
+	ticTacToe()
+
+	fmt.Println("map-literals.go:")
+	fmt.Println(m)
+
+	fmt.Println("mutating-maps.go:")
+	mutateMaps()
+
+	fmt.Println("function-values.go:")
+	funcValues()
+
+	fmt.Println("function-closures.go:")
+	funcClosures()
 }
